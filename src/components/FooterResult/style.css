@@ -1,5 +1,28 @@
 .footerResult {
     height: 171px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Recursive', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Recursive', sans-serif;
+}
+p{
+    text-align: center;
 }

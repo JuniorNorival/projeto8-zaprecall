@@ -2,7 +2,8 @@ import Icon from "../Icon"
 import "./footer.css"
 import FooterResult from "../FooterResult/FooterResult"
 export default function Footer({ respostas, total }) {
-
+    
+    console.log(respostas)
     if (respostas.length >= 0 && respostas.length < total) {
         return (
             <div className="footer">
@@ -16,7 +17,7 @@ export default function Footer({ respostas, total }) {
     }
     if (respostas.length === total) {
         return (
-            <FooterResult respostas={respostas} />
+            <FooterResult respostas={respostas} total={total} />
         )
     }
 
