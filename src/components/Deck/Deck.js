@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Footer from '../Footer/Footer'
 
 
-export default function Deck() {
+export default function Deck({visible, setVisible}) {
     const [respostas, setRespostas] = useState([])
     const arrayCards = [
         {
@@ -54,7 +54,7 @@ export default function Deck() {
             <div className='deck'>
                 <Cards respostas={respostas} setRespostas={setRespostas} arrayCards = {arrayCards}/>
             </div>
-            <Footer respostas={respostas} total = {total} />
+            <Footer respostas={respostas} total = {total} visible={visible} setVisible={setVisible} />
         </>
 
     )

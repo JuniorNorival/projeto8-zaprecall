@@ -3,7 +3,7 @@ import party from "../../assets/img/party.png"
 import sad from "../../assets/img/sad.png"
 import Icon from "../Icon"
 
-export default function FooterResult({ respostas, total }) {
+export default function FooterResult({ respostas, total, visible, setVisible }) {
     if (respostas.includes('erro')) {
         return (
             <div className="footerResult">
@@ -17,6 +17,7 @@ export default function FooterResult({ respostas, total }) {
                     <p>{respostas.length}/{total} CONCLUÍDOS</p>
                     <span>{respostas.map((result, index) => <Icon key={index} result={result} />)}</span>
                 </div>
+                <button onClick={()=> setVisible(true)} >Reiniciar</button>
             </div>
         )
 
@@ -31,8 +32,8 @@ export default function FooterResult({ respostas, total }) {
             <div className="completed">
                 <p>{respostas.length}/{total} CONCLUÍDOS</p>
                 <span>{respostas.map((result, index) => <Icon key={index} result={result} />)}</span>
-
             </div>
+            <button onClick={()=> setVisible(true)} >Reiniciar</button>
         </div>
     )
 }

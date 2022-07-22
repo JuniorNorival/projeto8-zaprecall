@@ -16,7 +16,7 @@ export default function Start() {
                             <h1>ZapRecall</h1>
                             <button onClick={() => setVisible(false)}>Iniciar Recall!</button>
                         </div>
-                    </div>) : (<div className='flash'><Deck /></div>)}
+                    </div>) : (<div className='flash'><Deck visible={visible} setVisible={setVisible}/></div>)}
             
         </>
 
