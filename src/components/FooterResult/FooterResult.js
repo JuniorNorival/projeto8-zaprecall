@@ -17,7 +17,7 @@ export default function FooterResult({ respostas, total, visible, setVisible }) 
                     <p>{respostas.length}/{total} CONCLUÍDOS</p>
                     <span>{respostas.map((result, index) => <Icon key={index} result={result} />)}</span>
                 </div>
-                <button onClick={()=> setVisible(true)} >Reiniciar</button>
+                <button  onClick={()=> setVisible(true)} >REINICIAR RECALL</button>
             </div>
         )
 
@@ -33,7 +33,7 @@ export default function FooterResult({ respostas, total, visible, setVisible }) 
                 <p>{respostas.length}/{total} CONCLUÍDOS</p>
                 <span>{respostas.map((result, index) => <Icon key={index} result={result} />)}</span>
             </div>
-            <button onClick={()=> setVisible(true)} >Reiniciar</button>
+            <button onClick={()=> setVisible(true)} >REINICIAR RECALL</button>
         </div>
     )
 }

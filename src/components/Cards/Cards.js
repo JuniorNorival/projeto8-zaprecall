@@ -1,6 +1,5 @@
 import Flashs from '../Flashs/Flashs'
-import { useState } from 'react'
-import Footer from '../Footer/Footer'
+
 
 export default function Cards({respostas, setRespostas, arrayCards}) {
 

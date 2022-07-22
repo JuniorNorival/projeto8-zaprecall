@@ -1,4 +1,4 @@
-.flash {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .deck {
-    margin:0 auto 172px auto;
+    margin: 0 auto 172px auto;
 }
 
 .cards {
@@ -37,6 +37,13 @@
     margin: 10px auto;
     height: auto;
     overflow-y: hidden;
+}
+
+.cards img:hover,
+button:hover,
+ion-icon:hover,
+.choice:hover {
+    cursor: pointer;
 }
 
 .open {
@@ -73,9 +80,7 @@
     margin-left: 15px;
 }
 
-ion-icon:hover {
-    cursor: pointer;
-}
+
 
 .choice ion-icon {
     width: 20px;
@@ -119,7 +124,7 @@ ion-icon:hover {
 
 .botao {
     width: 85px;
-    height: 40px;
+    height: 45px;
     margin-bottom: 5px;
 }
 
@@ -127,14 +132,14 @@ button {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-
+    border: none;
 }
+
 
 .botao p {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    text-align: center;
 
     color: #FFFFFF;
 }
@@ -183,7 +188,7 @@ button {
 .duvida {
     display: flex;
     justify-content: space-between;
-    margin: 0 5px 0 5px;
+
     width: 100%;
 }
 
@@ -198,4 +203,3 @@ button {
 .duvida ion-icon {
     color: #FF922E;
 }
-
