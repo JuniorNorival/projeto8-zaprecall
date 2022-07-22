@@ -20,7 +20,7 @@ export default function Icons({ result }) {
             <ion-icon name="help-circle-sharp"></ion-icon>
         )
     }
-
+return null;
 
 
 }
