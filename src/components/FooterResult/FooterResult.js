@@ -1,7 +1,7 @@
 import './style.css'
 import party from "../../assets/img/party.png"
 import sad from "../../assets/img/sad.png"
-import Icon from "../Icon"
+import Icon from "../Icon/Icon"
 
 export default function FooterResult({ respostas, total, visible, setVisible, metazap }) {
   

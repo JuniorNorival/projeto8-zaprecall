@@ -1,6 +1,6 @@
 import setinha from '../../assets/img/setinha.png'
 import { useState } from "react"
-import Icon from '../Icon'
+import Icon from '../Icon/Icon'
 export default function Flashs({
     question,
     answer,

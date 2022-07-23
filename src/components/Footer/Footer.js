@@ -1,4 +1,4 @@
-import Icon from "../Icon"
+import Icon from "../Icon/Icon"
 import "./footer.css"
 import FooterResult from "../FooterResult/FooterResult"
 export default function Footer({ respostas, total, visible, setVisible, metazap }) {
