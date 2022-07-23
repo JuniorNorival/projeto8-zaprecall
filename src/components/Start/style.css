@@ -28,6 +28,7 @@
 }
 
 input {
+    margin-top: 10px;
     width: 246px;
     height: 43px;
     background: #FFFFFF;
@@ -70,4 +71,12 @@ input::placeholder {
     font-size: 18px;
     line-height: 22px;
     color: #C0C0C0;
+}
+
+select {
+    margin: 10px auto;
+    width: 246px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 5px;
 }
