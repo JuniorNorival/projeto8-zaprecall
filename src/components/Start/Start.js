@@ -5,26 +5,44 @@ import './style.css'
 
 export default function Start() {
     const [visible, setVisible] = useState(true)
+    const [metazap, setMetazap] = useState(0)
     const getInputValue = (event) => {
 
         const userValue = event.target.value;
-
+        setMetazap(userValue)
         console.log(userValue);
     };
+    
     if (visible) {
-        return (
-            <div className="start" >
-                <div className="logo-start">
-                    <img src={logo} alt="logoinicio" />
-                    <h1>ZapRecall</h1>
-                    {/* <input type="text" onChange={getInputValue} /> */}
-                    <button onClick={() => setVisible(false)}>Iniciar Recall!</button>
+        if (metazap >=1 && metazap <= 8)
+        {
+            return (
+                <div className="start" >
+                    <div className="logo-start">
+                        <img src={logo} alt="logoinicio" />
+                        <h1>ZapRecall</h1>
+                        <input type="text" placeholder="Escolha sua meta de Zaps..." 
+                        onChange={getInputValue} />
+                        <button className='botaoliberado' onClick={() => setVisible(false)}>Iniciar Recall!</button>
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        } else {
+            return (
+                <div className="start" >
+                    <div className="logo-start">
+                        <img src={logo} alt="logoinicio" />
+                        <h1>ZapRecall</h1>
+                        <input type="text" placeholder="Escolha sua meta de Zaps..." onChange={getInputValue} />
+                        <button className='botaofechado'>Iniciar Recall!</button>
+                    </div>
+                </div>
+            )
+        }
+        
     } else {
         return (
-            <div className='container'><Deck visible={visible} setVisible={setVisible} /></div>
+            <div className='container'><Deck visible={visible} setVisible={setVisible} metazap={metazap} /></div>
         )
 
 

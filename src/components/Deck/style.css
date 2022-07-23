@@ -168,6 +168,13 @@ button {
 
 }
 
+
+.answered .acerto,
+.answered .erro,
+.answered .duvida {
+    margin: 0 15px;
+}
+
 .answered .acerto p {
     color: #2FBE34;
     text-decoration: line-through;

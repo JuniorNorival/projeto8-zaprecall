@@ -3,8 +3,12 @@ import party from "../../assets/img/party.png"
 import sad from "../../assets/img/sad.png"
 import Icon from "../Icon"
 
-export default function FooterResult({ respostas, total, visible, setVisible }) {
-    if (respostas.includes('erro')) {
+export default function FooterResult({ respostas, total, visible, setVisible, metazap }) {
+  
+    const zap = respostas.filter((zap) => zap === 'acerto')
+
+   
+    if (respostas.includes('erro') || zap < metazap) {
         return (
             <div className="footerResult">
                 <h1>
@@ -25,7 +29,7 @@ export default function FooterResult({ respostas, total, visible, setVisible }) 
     return (
         <div className="footerResult">
             <h1>
-                    <img src={party} alt="sad" />
+                 <img src={party} alt="sad" />
                     Parabéns
                 </h1>
                 <p>Você não esqueceu de <br /> nenhum flashcard!</p>

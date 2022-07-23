@@ -27,7 +27,26 @@
     color: #FFFFFF;
 }
 
-.logo-start button {
+input {
+    width: 246px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ADADAD;
+}
+
+.botaoliberado {
     margin-top: 30px;
     width: 246px;
     height: 54px;
@@ -40,4 +59,15 @@
     color: #D70900;
     transition: 0.1s all;
     cursor: pointer;
+}
+
+.botaofechado {
+    margin-top: 30px;
+    width: 246px;
+    height: 54px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #C0C0C0;
 }
