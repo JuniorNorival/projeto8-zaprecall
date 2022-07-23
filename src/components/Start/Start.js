@@ -32,6 +32,7 @@ export default function Start() {
                         <h1>ZapRecall</h1>
                         <input type="text" placeholder="Escolha sua meta de Zaps..."
                             onChange={getInputValue} />
+                            <h3>Escolha seu Deck</h3>
                         <select onChange={getSelectValue}>
                             <option value="REACT">REACT</option>
                             <option value="NARUTO">NARUTO</option>
