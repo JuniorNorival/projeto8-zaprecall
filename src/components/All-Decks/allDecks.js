@@ -1,6 +1,7 @@
 export function allDecks (deckselect){
     
     if (deckselect === 'REACT'){
+        
         const cards = [
             {
                 question: 'O que é JSX',

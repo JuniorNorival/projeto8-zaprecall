@@ -3,7 +3,7 @@ import party from "../../assets/img/party.png"
 import sad from "../../assets/img/sad.png"
 import Icon from "../Icon/Icon"
 
-export default function FooterResult({ respostas, total, visible, setVisible, metazap }) {
+export default function FooterResult({ respostas, total, visible, setVisible, metazap, setMetazap }) {
   
     const zap = respostas.filter((zap) => zap === 'acerto')
 
@@ -21,7 +21,9 @@ export default function FooterResult({ respostas, total, visible, setVisible, me
                     <p>{respostas.length}/{total} CONCLUÍDOS</p>
                     <span>{respostas.map((result, index) => <Icon key={index} result={result} />)}</span>
                 </div>
-                <button  onClick={()=> setVisible(true)} >REINICIAR RECALL</button>
+                <button  onClick={()=> {
+                setVisible(true)
+                setMetazap(0)}} >REINICIAR RECALL</button>
             </div>
         )
 
@@ -38,7 +40,9 @@ export default function FooterResult({ respostas, total, visible, setVisible, me
                 <span>{respostas.map((result, index) => 
                 <Icon key={index} result={result} />)}</span>
             </div>
-            <button onClick={()=> setVisible(true)} >REINICIAR RECALL</button>
+            <button onClick={()=> {
+                setVisible(true)
+                setMetazap(0)}} >REINICIAR RECALL</button>
         </div>
     )
 }
