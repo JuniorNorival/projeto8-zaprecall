@@ -76,8 +76,7 @@ export default function Flashs({
 
 function addResponse (response){
     const novasRespostas = [...respostas, response] 
-    setRespostas(novasRespostas)
-   
+    setRespostas(novasRespostas)  
 }
 
 }

@@ -35,7 +35,8 @@ export default function FooterResult({ respostas, total, visible, setVisible, me
                 <p>Você não esqueceu de <br /> nenhum flashcard!</p>
             <div className="completed">
                 <p>{respostas.length}/{total} CONCLUÍDOS</p>
-                <span>{respostas.map((result, index) => <Icon key={index} result={result} />)}</span>
+                <span>{respostas.map((result, index) => 
+                <Icon key={index} result={result} />)}</span>
             </div>
             <button onClick={()=> setVisible(true)} >REINICIAR RECALL</button>
         </div>
